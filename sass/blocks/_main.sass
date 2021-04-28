@@ -1,0 +1,42 @@
+.main
+  position: relative
+  padding-bottom: 105px
+  &-text
+    display: flex
+    justify-content: space-between
+    padding: 40px 0
+    color: $black
+    align-items: end
+    &__name
+      font-size: 48px
+      line-height: 59px
+      margin: 0
+      max-width: 130px
+      font-weight: 700
+    &__info
+      display: block
+      margin: 0
+      font-size: 18px
+      line-height: 22px
+      font-weight: 500
+      max-width: 190px
+      align-self: flex-end
+    &__lang
+      display: block
+      transform: rotate(-90deg) translate(30px, 25px)
+      align-self: flex-end
+      font-size: 16px
+      line-height: 20px
+      font-weight: 700
+      &--eng
+        color: $black
+      &--ru
+        color: $grey
+  &-photo
+    position: relative
+    width: 100%
+    &-img
+      width: 100%
+      object-fit: cover
+      max-height: 387px
+      object-position: 50% 40%
