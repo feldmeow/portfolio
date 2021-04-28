@@ -344,7 +344,6 @@ template {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -361,6 +360,7 @@ body {
 }
 
 .navbar {
+  font-family: "Gilroy-Bold", sans-serif;
   padding: 33px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -403,6 +403,7 @@ body {
 }
 
 .main-text__name {
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 48px;
   line-height: 59px;
   margin: 0;
@@ -411,6 +412,7 @@ body {
 }
 
 .main-text__info {
+  font-family: "Gilroy-Medium", sans-serif;
   display: block;
   margin: 0;
   font-size: 18px;
@@ -422,6 +424,7 @@ body {
 }
 
 .main-text__lang {
+  font-family: "Gilroy-Bold", sans-serif;
   display: block;
   -webkit-transform: rotate(-90deg) translate(30px, 25px);
           transform: rotate(-90deg) translate(30px, 25px);
@@ -456,12 +459,31 @@ body {
 
 .about {
   background-color: #F6F6F6;
-  min-height: 200px;
+  padding: 120px 460px;
 }
 
 .about__title {
+  font-family: "Gilroy-Bold", sans-serif;
   font-size: 34px;
   line-height: 42px;
   text-align: center;
+}
+
+.about__subtitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 220px;
+}
+
+.about__subtitle-text {
+  font-family: "Gilroy-Medium", sans-serif;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
 }
 /*# sourceMappingURL=style.css.map */
