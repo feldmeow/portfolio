@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <nav class="container navbar">
       <a href="#" class="navbar__link">Home</a>
       <a href="#" class="navbar__link">About me</a>
@@ -21,36 +21,95 @@
       <a href="#" class="navbar__link">Contacts</a>
     </nav>
   </header>
-  <section class="main container">
-    <div class="main-text">
-      <h1 class="main-text__name">Jauhen Feldman</h1>
-      <h2 class="main-text__info">Novice Web-developer 28 years old, Brest</h2>
-      <span class="main-text__lang">
-        <a class="main-text__lang--ru" href="#">RU</a> |
-        <a class="main-text__lang--eng" href="#">ENG</a>
-      </span>
-    </div>
-    <div class="main-photo">
-      <img class="main-photo-img" src="./img/1111.jpg" alt="Image: Jauhen Feldman photo">
-    </div>
-  </section>
-  <section class="about">
-    <h2 class="about__title">
-      About me
-    </h2>
-    <div class="about__subtitle">
-      <p class="about__subtitle-text">
-        Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
-      </p>
-      <p class="about__subtitle-text">
-        I'm studying at courses "Web and mobile design interfaces" in IT-Academy.
-      </p>
-      <p class="about__subtitle-text">
-        Ready to implement excellent projects with wonderful people.
-      </p>
-    </div>
-  </section>
+  <!-- HEADER -->
 
+  <div class="main">
+    <section class="main-container container">
+      <div class="main-text">
+        <h1 class="main-text__name">Jauhen Feldman</h1>
+        <h2 class="main-text__info">Novice Web-developer 28 years old, Brest</h2>
+        <span class="main-text__lang">
+          <a class="main-text__lang--ru" href="#">RU</a> |
+          <a class="main-text__lang--eng" href="#">ENG</a>
+        </span>
+      </div>
+      <div class="main-photo">
+        <img class="main-photo-img" src="./img/1111.jpg" alt="Image: Jauhen Feldman photo">
+      </div>
+    </section>
+  </div>
+  <!-- MAIN -->
+  <div class="about">
+    <section class="about-container">
+      <h2 class="about__title section__title">
+        About me
+      </h2>
+      <div class="about__subtitle">
+        <p class="about__subtitle-text">
+          Hi, I'm Jauhen – Novice Web-developer from Brest. I'm interested in Web-development and everything connected
+          with it.
+        </p>
+        <p class="about__subtitle-text">
+          I finished web development courses at school Glo-academy.
+        </p>
+        <p class="about__subtitle-text">
+          Ready to implement excellent projects with wonderful people.
+        </p>
+      </div>
+    </section>
+  </div>
+  <!-- ABOUT -->
+  <section class="skills">
+    <h2 class="skills__title section__title">Skills</h2>
+  </section>
+  <!-- SKILLS -->
+  <div class="portfolio">
+    <section class="portfolio-container container">
+      <h2 class="section__title">Portfolio</h2>
+      <div class="portfolio-content">
+        <div class="portfolio__project">
+          <div class="portfolio__project-wrapper">
+            <img src="./img/Universal.jpg" alt="Image: Portfolio screen 'Universal'" class="portfolio__project__screen">
+          </div>
+          <!-- <div class="portfolio__project__tags">
+            <a href="#" class="portfolio__project__tags">HTML</a>,
+            <a href="#" class="portfolio__project__tags">CSS</a>,
+            <a href="#" class="portfolio__project__tags">JavaScript</a>,
+            <a href="#" class="portfolio__project__tags">JQuery</a>
+          </div> -->
+          <a class="portfolio__project__link" href="https://yauhenfeldman.ru/Universal/">Universal</a>
+
+        </div>
+        <div class="portfolio__project">
+          <div class="portfolio__project-wrapper">
+            <img src="./img/ToDo.jpg" alt="Image: Portfolio screen 'ToDoList'" class="portfolio__project__screen">
+          </div>
+          <a class="portfolio__project__link" href="https://yauhenfeldman.ru/ToDo/">ToDo</a>
+        </div>
+        <div class="portfolio__project">
+          <div class="portfolio__project-wrapper">
+            <img src="./img/tour-plan.jpg" alt="Image: Portfolio screen 'Tour-Plan'" class="portfolio__project__screen">
+          </div>
+          <a class="portfolio__project__link" href="https://yauhenfeldman.ru/tour-plan/">Tour-Plan</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <div class="contacts">
+    <section class="contacts-container container">
+      <h2 class="section__title contacts-title">
+        Contacts
+      </h2>
+      <p class="contacts__subtitle">
+        Want to know more or just chat?
+        You are welcome!
+      </p>
+      <button class="contacts__button">
+        Send message
+      </button>
+    </section>
+  </div>
 </body>
 
 </html>
