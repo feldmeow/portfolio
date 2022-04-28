@@ -1,10 +1,13 @@
 .portfolio
-  padding: 100px 0
+  padding: 50px 0 100px 0
   background-color: #F6F6F6
   &-content
-    padding: 50px 0
     display: flex
     justify-content: space-between
+    padding-top: 50px
+    flex-wrap: wrap
+    min-height: 600px
+    align-content: space-between
   &__project
     max-width: 270px
     display: flex
@@ -12,10 +15,12 @@
     justify-content: space-between
     align-items: center
     min-height: 250px
+    position: relative
     &__screen
       width: 100%
       object-fit: cover
       display: block
+      min-height: 190px
     &__link
       display: block
       font-family: Gilroy-Medium
@@ -27,3 +32,14 @@
       &:hover
         cursor: pointer
         color: #828282
+.on-dev
+  &::after
+    content: 'in development'
+    position: absolute
+    right: 0
+    bottom: 65px
+    background-color: red
+    color: white
+    padding: 2px 4px
+    font-family: $medium
+    font-size: 10px
