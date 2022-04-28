@@ -6,19 +6,27 @@
     justify-content: space-between
     padding-top: 50px
     flex-wrap: wrap
-    min-height: 600px
+    min-height: 650px
     align-content: space-between
   &__project
-    max-width: 270px
+    max-width: 300px
     display: flex
     flex-direction: column
     justify-content: space-between
     align-items: center
-    min-height: 250px
+    min-height: 290px
     position: relative
+    padding: 20px
+    border: 2px solid #F6F6F6
+    transition: .4s ease-in-out
+    &:hover
+      cursor: pointer
+      box-shadow: 0 3px 10px grey
+
     &__screen
+      position: relative
       width: 100%
-      object-fit: cover
+      object-fit: contain
       display: block
       min-height: 190px
     &__link
@@ -33,13 +41,15 @@
         cursor: pointer
         color: #828282
 .on-dev
-  &::after
-    content: 'in development'
-    position: absolute
-    right: 0
-    bottom: 65px
-    background-color: red
-    color: white
-    padding: 2px 4px
-    font-family: $medium
-    font-size: 10px
+  .portfolio__project-wrapper
+    &::after
+      content: 'in development'
+      position: absolute
+      right: 0
+      top: 170px
+      background-color: red
+      color: white
+      padding: 2px 4px
+      font-family: $medium
+      font-size: 10px
+      z-index: 1
