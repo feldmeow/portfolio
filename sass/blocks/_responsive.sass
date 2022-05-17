@@ -1,0 +1,23 @@
+@media ( max-width: 1000px )
+  .container
+    max-width: 600px
+
+@media ( max-width: 630px )
+  .container
+    max-width: 300px
+  .main
+    &-container
+      height: 450px
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+    &-text
+      height: 200px
+      align-items: center
+      &__name
+        max-width: none
+        text-align: center
+      &__info
+        width: 100%
+        align-self: center
+        text-align: center
